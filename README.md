@@ -2,7 +2,7 @@
 
 MIS301 - WEB PROGRAMMING Final Programming Assignment
 
-### OSSEC
+### Weather of Forecast of Turkey
 
  In navbar, we used bootstrap and this is the navbar brand that we randomly found on a website, and there is a search box that you write a city name and see the instant weather. If you write a city name and enter it, you can see that city and its weather.
 
