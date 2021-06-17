@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- title -->
+    <title>The Weather Channel</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.qtip.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app-wrap">
+      <!-- nav-bar -->
+      <nav class="ps-5 navbar navbar-expand-lg nav-menu navbar-light bg-light">
+        <div class="container-fluid mx-auto">
+          <a href=" #" class="navbar-brand">
+            <img src="img/logo.png" alt="" class="img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <input
+              type="text"
+              class="search-box"
+              autocomplete="off"
+              placeholder="Enter a city..."
+            />
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!-- map -->
+        <div class="col-12">
+          <div class="row">
+            <div class="col-8">
+              <div id="map"></div>
+              <div class="weather_description">
+                If Mother Nature decides to bless you, you will wake up in a
+                warm and sunny morning. However, even in these ideal situations,
+                you still need to be prepared for safety. Although sunny days do
+                not have the number of dangers associated with severe weather,
+                certain safety factors should still be considered. If necessary,
+                prepare the participants to cool down in a sheltered place. It
+                is always recommended to use sunscreen and monitor the time of
+                reapplication, especially if event participants are drinking,
+                sweating, or participating in water sports. Sunglasses with UV
+                protection can help prevent photokeratitis, which is essentially
+                sunburn caused by excessive exposure to UV rays. If the weather
+                is dry and there is a lot of movement on the soft soil or sand,
+                the particles will be kicked up. This situation is most likely
+                to occur during games, sporting events, and concerts.Dehydration
+                is a common problem on sunny days, but hyponatremia (also called
+                excessive dehydration) can also occur. A common belief is that
+                water should be consumed continuously during warm days. However,
+                you only need to drink water when you are thirsty.
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <section class="location blue-header">
+                  <div class="city">Istanbul, TR</div>
+                  <div class="date">Thursday 10 June 2021</div>
+                </section>
+                <div class="current">
+                  <div class="temp">27<span>°C</span></div>
+                  <div class="weather">
+                    <span class="weather_text">Sunny</span>
+                    <img
+                      class="weather_icon"
+                      src="http://openweathermap.org/img/wn/10d@2x.png"
+                    />
+                  </div>
+                  <div class="hi-low">26°C / 20°C</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- before-footer -->
+    <div class="container-fluid bfooter mx-auto">
+      <div class="row justify-content-center align-items-center">
+        <div
+          class="
+            col-md-5 col-sm-5
+            about-pantero
+            justify-content-center
+            align-items-center
+          "
+        >
+          <h1>About Us</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>100 highland ave, california,
+              united state
+            </li>
+            <li><i class="fas fa-envelope"></i>contact@us.com</li>
+            <li><i class="fas fa-phone-square-alt"></i> 100 800 1234 5555</li>
+          </ul>
+          <div class="social-last">
+            <div class="social-con">
+              <h2>106</h2>
+              <h3>SHARES</h3>
+            </div>
+            <div class="social-button-group">
+              <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-google-plus-g"></i></li>
+                <li><i class="fas fa-envelope"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-2 google-map">
+          <h1>Google Map</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98139.23166714954!2d30.474774447573672!3d39.76545390658628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc3e08220c0e5f%3A0xbc89395938049a08!2sEski%C5%9Fehir!5e0!3m2!1str!2str!4v1619862161943!5m2!1str!2str"
+            width="370"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>
+        ©2017 <b>The Weather Channel.com</b>, made with  all right reserved
+      </p>
+      <ul>
+        <li>Contact us</li>
+        <li>About us</li>
+        <li>Site map</li>
+        <li>Privacy policy</li>
+      </ul>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/raphael-min.js"></script>
+    <script type="text/javascript" src="js/paths.js"></script>
+    <script type="text/javascript" src="js/turkiye.js?v=123"></script>
+    <script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#map svg path").click(function () {
+          console.log("adfs");
+          var id = $(this).attr("id");
+          $("#sehir").text(id);
+        });
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
